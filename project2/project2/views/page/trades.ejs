@@ -1,0 +1,21 @@
+<%- include('../partials/header.ejs')%>
+
+
+<h1 class = "title">Search By Category</h1>
+<%const category = []%>
+<% for (var i = 0; i < trades.length; i++) { %>
+    <% if (!category.includes(trades[i].typeSelection)) { %>
+        <%category.push(trades[i].typeSelection) %>   
+    <% } %> 
+<% } %> 
+<% for (var i = 0; i < category.length; i++) { %>
+    <h1 class = typesRight><%= category[i]%> </h1>   
+    <% for (var j = 0; j < trades.length; j++) { %>
+        <% if (category[i] == trades[j].typeSelection) { %>
+            <a href = '/trades/<%=trades[j].id%>'><p class = specificsR><%= trades[j].brand %> <%= trades[j].model%></p></a>
+        <% } %> 
+    <% } %> 
+<% } %> 
+
+
+<%- include('../partials/footer.ejs')%>

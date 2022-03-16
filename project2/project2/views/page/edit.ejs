@@ -1,0 +1,70 @@
+<%- include('../partials/header.ejs')%>
+
+
+<br>
+
+                <h1 id = "title">Edit Trade</h1>
+
+    <div class = "wholeForm">
+        <form action = '/trades/<%= trade.id%>?_method = PUT' enctype = "multipart/form-data" method = 'POST'>
+
+                <label for ="typeSelection" class = "label">Category of Stationery</label><br>
+                <input type = "text" class = "textInput" value = "<%=trade.typeSelection%>" id = "typeSelection" name = 'typeSelection'>
+
+
+            <br> <label for = "Brand" class = "label">Brand</label><br>
+            <div class = "input">
+            <input type = "text" class = "textInput" value = "<%=trade.brand%>" id = "brand" name = "brand">
+            </div>
+
+            <br> <label for = "Model" class = "label">Model</label><br>
+            <div class = "input">
+                <input type = "text" class = "textInput" value = "<%=trade.model%>" id = "model" name = "model">
+            </div>
+
+            <br><label for = "nibSize" class = "label">Nib Size (if applicable)</label><br>
+            <div class = "formInput">
+                <select class = "sizeSelect" id = "nibSize" name = "nibSize">
+                    <option>0.3mm</option>
+                    <option>0.38mm</option>
+                    <option>0.4mm</option>
+                    <option>0.5mm</option>
+                    <option>0.7mm</option>
+                    <option>0.9mm</option>
+                    <option>1.0mm</option>
+                    <option>1.2mm</option>
+                    <option>1.5mm</option>
+                    <option>Other</option>
+                    <option>N/A</option>
+                </select>
+            </div>
+
+            <br><label for = "inkColor" class = "label">Ink Color (if applicable)</label><br>
+            <div class = "formInput">
+                <select class = "inkSelect" id = "inkColor" name = "inkColor">
+                    <option>Black</option>
+                    <option>Blue</option>
+                    <option>Red</option>
+                    <option>Purple</option>
+                    <option>Green</option>
+                    <option>Pink</option>
+                    <option>Orange</option>
+                    <option>White</option>
+                    <option>Other</option>
+                    <option>N/A</option>
+                </select>
+            </div>
+
+        <br><label for = "details" class = "label">Relevant Details</label><br>
+            <div class = "textArea">
+                <textarea rows = "5" cols= "33" id = "details" name = "details"><%=trade.details%></textarea>
+            </div>
+
+            <label for = "images" class = "label">Images</label><br>
+            <input type = "file" class = "imageInput" id = "images"><br>
+
+            <button type = "submit" class = "submit" id = "submitButton">Submit</button>
+        </form>
+    </div>
+
+<%- include('../partials/footer.ejs')%>

@@ -1,0 +1,82 @@
+<%- include('../partials/header.ejs')%>
+
+
+<br>
+
+                <h1 id = "title">New Trade</h1>
+
+    <div class = "wholeForm">
+        <form action = '/trades' method = "POST">
+            <div class = "formInput">
+                <label for ="typeSelection" class = "label">Category of Stationery</label><br>
+                <select class = "typeSelect" id = "typeSelection" name = "typeSelection">
+                    <option>Ballpoint Pen</option>
+                    <option>Fountain Pen</option>
+                    <option>Rollerball Pen</option>
+                    <option>Felt Pen</option>
+                    <option>Mechanical Pencil</option>
+                    <option>Traditional Pencil</option>
+                    <option>Notebook</option>
+                    <option>Reusable Notebook</option>
+                    <option>Adgenda/Calendar</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            
+
+            <br> <label for = "brand" class = "label">Brand</label><br>
+            <div class = "input">
+            <input type = "text" class = "textInput" placeholder = "ex: Pentel" id = "brand" name = "brand">
+            </div>
+
+            <br> <label for = "model" class = "label">Model</label><br>
+            <div class = "input">
+                <input type = "text" class = "textInput" placeholder = "ex: Energel Clena" id = "model" name = "model">
+            </div>
+
+            <br><label for = "nibSize" class = "label">Nib Size (if applicable)</label><br>
+            <div class = "formInput">
+                <select class = "sizeSelect" id = "nibSize">
+                    <option>0.3mm</option>
+                    <option>0.38mm</option>
+                    <option>0.4mm</option>
+                    <option>0.5mm</option>
+                    <option>0.7mm</option>
+                    <option>0.9mm</option>
+                    <option>1.0mm</option>
+                    <option>1.2mm</option>
+                    <option>1.5mm</option>
+                    <option>Other</option>
+                    <option>N/A</option>
+                </select>
+            </div>
+
+            <br><label for = "inkColor" class = "label">Ink Color (if applicable)</label><br>
+            <div class = "formInput">
+                <select class = "inkSelect" id = "inkColor" name = "inkColor">
+                    <option>Black</option>
+                    <option>Blue</option>
+                    <option>Red</option>
+                    <option>Purple</option>
+                    <option>Green</option>
+                    <option>Pink</option>
+                    <option>Orange</option>
+                    <option>White</option>
+                    <option>Other</option>
+                    <option>N/A</option>
+                </select>
+            </div>
+
+        <br><label for = "details" class = "label">Relevant Details</label><br>
+            <div class = "textArea">
+                <textarea rows = "5" cols= "33" id = "details" name = "details"></textarea>
+            </div>
+
+            <label for = "images" class = "label">Images</label><br>
+            <input type = "file" class = "imageInput" id = "images" name = "images"><br>
+
+            <button type = "submit" class = "submit" id = "submitButton">Submit</button>
+        </form>
+    </div>
+
+<%- include('../partials/footer.ejs')%>

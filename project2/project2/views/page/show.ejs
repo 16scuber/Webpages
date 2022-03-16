@@ -1,0 +1,19 @@
+<%- include('../partials/header.ejs')%>
+
+
+
+<h1 id = "detail"> Details </h1>
+<h3 id = "modelBrand"><%= trade.brand %> <%= trade.model%></h3> 
+
+<img src = "/images/pens-with-blue.jpg" id = "energel" alt = "energelClena">
+<br> <p id = "tradeinformation"> <%=trade.details%> <br> ||Nib Size = <%=trade.nibSize%>
+ || Ink Color = <%=trade.inkColor%> 
+</p>
+<a href = "/trades" class = "rateit"> Rate It</a>
+<a href = "/trades" class = "tradeit">Trade It</a>
+<form>
+<button type = "submit" class = "editit" formmethod = "GET" formaction = "/trades/<%= trade.id%>/edit">Edit</button>
+<button type = "submit" class = "deleteit" formmethod = "POST" formaction = "/trades/<%= trade.id%>?_method=DELETE">Delete</button>
+</form>
+
+<%- include('../partials/footer.ejs')%>
