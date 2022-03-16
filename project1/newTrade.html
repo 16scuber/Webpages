@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href = "newTrade.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>All Things Stationery New Trade </title>
+    <link rel = "icon" href = "All-Things-Stationery-logos_transparent.png">
+</head>
+
+<body>
+
+
+
+        <header class = "header">
+            <a href = "index.html">
+                <img src = "All_Things_Stationery_Logo.jpg" id = "logo" alt = "logo"><br>
+            </a>
+    
+            <a href = "trades.html" class = "logIn">Trades</a>
+            <a href = "newTrade.html" class = "logIn">Start Trading!</a>
+            <a href = "#" class = "logIn">Log In</a>
+            <a href = "#" class = "logIn">Sign Up</a>
+
+            <div class = "navList">
+            <nav>
+            <a href = "index.html">Home</a>
+            <a href = "trades.html">Trades</a>
+            <a href = "trade.html">Trade</a>
+            <a class = "active" href = "newTrade.html">New Trade</a>
+            </nav>
+            </div><br>
+
+
+        </header>
+<br>
+
+                <h1 id = "title">New Trade</h1>
+
+    <div class = "wholeForm">
+        <form>
+            <div class = "formInput">
+                <label for ="typeSelection" class = "label">Category of Stationery</label><br>
+                <select class = "typeSelect" id = "typeSelection">
+                    <option>Ballpoint Pen</option>
+                    <option>Fountain Pen</option>
+                    <option>Rollerball Pen</option>
+                    <option>Felt Pen</option>
+                    <option>Mechanical Pencil</option>
+                    <option>Traditional Pencil</option>
+                    <option>Notebook</option>
+                    <option>Reusable Notebook</option>
+                    <option>Adgenda/Calendar</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            
+
+            <br> <label for = "Brand" class = "label">Brand</label><br>
+            <div class = "input">
+            <input type = "text" class = "textInput" placeholder = "ex: Pentel" id = "Brand">
+            </div>
+
+            <br> <label for = "Model" class = "label">Model</label><br>
+            <div class = "input">
+                <input type = "text" class = "textInput" placeholder = "ex: Energel Clena" id = "Model">
+            </div>
+
+            <br><label for = "nibSize" class = "label">Nib Size (if applicable)</label><br>
+            <div class = "formInput">
+                <select class = "sizeSelect" id = "nibSize">
+                    <option>0.3mm</option>
+                    <option>0.38mm</option>
+                    <option>0.4mm</option>
+                    <option>0.5mm</option>
+                    <option>0.7mm</option>
+                    <option>0.9mm</option>
+                    <option>1.0mm</option>
+                    <option>1.2mm</option>
+                    <option>1.5mm</option>
+                    <option>Other</option>
+                    <option>N/A</option>
+                </select>
+            </div>
+
+            <br><label for = "inkColor" class = "label">Ink Color (if applicable)</label><br>
+            <div class = "formInput">
+                <select class = "inkSelect" id = "inkColor">
+                    <option>Black</option>
+                    <option>Blue</option>
+                    <option>Red</option>
+                    <option>Purple</option>
+                    <option>Green</option>
+                    <option>Pink</option>
+                    <option>Orange</option>
+                    <option>White</option>
+                    <option>Other</option>
+                    <option>N/A</option>
+                </select>
+            </div>
+
+        <br><label for = "details" class = "label">Relevant Details</label><br>
+            <div class = "textArea">
+                <textarea rows = "5" cols= "33" id = "details"></textarea>
+            </div>
+
+            <label for = "images" class = "label">Images</label><br>
+            <input type = "file" class = "imageInput" id = "images"><br>
+
+            <button type = "submit" class = "submit" id = "submitButton">Submit</button>
+        </form>
+    </div>
+
+        <footer class = "footer">
+            <h5>&#169; All Things Stationery</h5>
+        </footer>
+
+</body>
+</html>

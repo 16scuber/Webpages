@@ -1,0 +1,82 @@
+
+.header {
+    background-color: white;
+}
+/* styling for the heading elements */
+#logo {
+    width: 150px;
+    height: auto;
+}
+.logIn {
+    padding: 5px 10px;
+    color: #718879;
+    position: relative;
+    left: 95em;
+    top: -8em;
+}
+.navList {
+    position: absolute;
+    right: 0.5em;
+    top: 2em;
+    text-align: center;
+    font-size: 30px;
+    justify-content: space-between;
+}
+a:link {
+    text-decoration: none;
+}
+.nav li {
+    display: inline;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+.navList a {
+    background-color: white;
+    color: #102F25;
+    font-family: 'Work Sans', sans-serif;
+}
+.navList a:hover {
+    color: #102F25;
+    font-family: 'Work Sans', sans-serif;
+}
+.navList a.active {
+    background-color: white;
+    color: #102F25;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+}
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+}
+/* styling for the front image */
+.whiteNotebook {
+    height: auto;
+    width: 45%;
+    float: right;
+    padding-right: 5em;
+}
+/* styling for the front image */
+#Heading { 
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 36px;
+}
+/* styling for the photo and hte mission statement */
+#information {
+    float: left;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    padding-left: 5em;
+    width: 40%;
+    line-height: 2em;
+}
+/* styling for the footer element*/
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+}

@@ -1,0 +1,134 @@
+
+.header {
+    background-color: white;
+}
+body {
+    width: 100wv;
+    max-width: 100wv;
+}
+/* styling for the heading elements */
+#logo {
+    width: 150px;
+    height: auto;
+}
+.logIn {
+    padding: 5px 10px;
+    color: #718879;
+    position: relative;
+    top: -8em;
+    left: 95em;
+    max-width: 100%;
+} 
+.navList {
+    position: absolute;
+    right: 0.5em;
+    top: 1em;
+    text-align: center;
+    font-size: 30px;
+    justify-content: space-between;
+    max-width: 100wv;
+}
+a:link {
+    text-decoration: none;
+}
+.nav li {
+    display: inline;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+.navList a {
+    background-color: white;
+    color: #102F25;
+    font-family: 'Work Sans', sans-serif;
+}
+.navList a:hover {
+    color: #102F25;
+    font-family: 'Work Sans', sans-serif;
+}
+.navList a.active {
+    background-color: white;
+    color: #102F25;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+}
+/* styling for the image, detail paragraphs*/
+#energel {
+    width: 30%;
+    height: auto;
+    float: left;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 6vh;
+}
+#detail {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+#information {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 200;   
+    width: 40%;
+    line-height: 2em;
+    float: left;
+    left: 25vw;
+    top: 50vh;
+}
+/* button styling idea taken from https://fdossena.com/?p=html5cool/buttons/i.frag */
+a.tradeit{
+    display: inline-block;
+    padding: 0.35em;
+    border: 0.1em solid #718879;
+    margin: 0 0.5em 0.5em 0;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color:#718879;
+    text-align: center;
+    transition: all 0.2s;
+    width: 10%;
+    white-space: nowrap;
+    font-weight: bold;
+    float: right;
+    position: absolute;
+    left: 76.5vw;
+    top: 35vh;
+}
+a.tradeit:hover {
+    color: white;
+    background-color: #718879;
+}
+a.rateit {
+    display: inline-block;
+    padding: 0.35em;
+    border: 0.1em solid #144e91;
+    margin: 0 0.5em 0.5em 0;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color:#144e91;
+    text-align: center;
+    transition: all 0.2s;
+    width: 10%;
+    white-space: nowrap;
+    font-weight: bold;
+    float: right;
+    position: absolute;
+    left: 88vw;
+    top: 35vh;
+}
+a.rateit:hover {
+    color: white;
+    background-color: #144e91;
+}
+/* styling for the footer element*/
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+}
